@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar Criptomonedas</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="img/cryptomonedas.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="conteniner__columnas">
+            <div class="">
+                <img src="img/cryptomonedas.png">
+            </div>
+            <div class="">
+                <form id="formulario">
+                    <div class="row">
+                        <label>Elige tu Moneda</label>
+                        <select
+                            class="u-full-width"
+                            id="moneda"
+                            name="moneda"
+                        >
+                                <option value="" disabled selected>Elige tu moneda</option>
+                                <option value="USD">Dólar Estadounidense</option>
+                                <option value="CAD">Dólar canadiense</option>
+                                <option value="EUR">Euros</option>
+                                <option value="PEN">Soles</option>
+                                <option value="MXN">Peso Mexicano</option>
+                                <option value="COP">Peso colombiano</option>
+                                <option value="CLP">Peso chileno</option>
+                                <option value="GBP">Libras</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                    <div>
+                        <label>Elige tu Criptomoneda</label>
+                        <select 
+                            class="u-full-width"
+                            id="criptomonedas"
+                            name="criptomoneda"
+                        >
+                            <option value="" disabled selected>Elige tu criptomoneda</option>
+                        </select>
+                    </div>
+                    </div>
+                    <input class="button-primary u-full-width" type="submit" value="Cotizar" />
+
+                    <div id="resultado" class="resultado"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
